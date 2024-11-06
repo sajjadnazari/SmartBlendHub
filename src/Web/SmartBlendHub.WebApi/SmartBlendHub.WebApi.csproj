@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\SmartBlendHub.Application\SmartBlendHub.Application\SmartBlendHub.Application.csproj" />
+    <ProjectReference Include="..\..\Contracts\SmartBlendHub.Contracts\SmartBlendHub.Contracts.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\SmartBlendHub.Infrastructure\SmartBlendHub.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

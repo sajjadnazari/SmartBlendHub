@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\SmartBlendHub.Application\SmartBlendHub.Application\SmartBlendHub.Application.csproj" />
+  </ItemGroup>
+
 </Project>
