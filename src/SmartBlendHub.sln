@@ -13,17 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C3BE423F-B07C-48AA-8807-EADFA73E4025}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartBlendHub.Application", "Application\SmartBlendHub.Application\SmartBlendHub.Application\SmartBlendHub.Application.csproj", "{3B5772E4-F21F-440C-AA95-B33387B1F820}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartBlendHub.Application", "Application\SmartBlendHub.Application\SmartBlendHub.Application\SmartBlendHub.Application.csproj", "{3B5772E4-F21F-440C-AA95-B33387B1F820}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartBlendHub.Contracts", "Contracts\SmartBlendHub.Contracts\SmartBlendHub.Contracts.csproj", "{6996E959-D5E0-4757-BDB5-FD5A17A0E78F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartBlendHub.Contracts", "Contracts\SmartBlendHub.Contracts\SmartBlendHub.Contracts.csproj", "{6996E959-D5E0-4757-BDB5-FD5A17A0E78F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartBlendHub.Domain", "Domain\SmartBlendHub.Domain\SmartBlendHub.Domain.csproj", "{1473D293-3ED8-422B-82B7-C9009AF6FF87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartBlendHub.Domain", "Domain\SmartBlendHub.Domain\SmartBlendHub.Domain.csproj", "{1473D293-3ED8-422B-82B7-C9009AF6FF87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartBlendHub.Infrastructure", "Infrastructure\SmartBlendHub.Infrastructure\SmartBlendHub.Infrastructure.csproj", "{D0C5ED9A-11D7-4A65-84C1-D765B6D5A43C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartBlendHub.Infrastructure", "Infrastructure\SmartBlendHub.Infrastructure\SmartBlendHub.Infrastructure.csproj", "{D0C5ED9A-11D7-4A65-84C1-D765B6D5A43C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartBlendHub.WebApi", "Web\SmartBlendHub.WebApi\SmartBlendHub.WebApi.csproj", "{D5213FFD-249E-4C6E-920C-3D521227A770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartBlendHub.WebApi", "Web\SmartBlendHub.WebApi\SmartBlendHub.WebApi.csproj", "{D5213FFD-249E-4C6E-920C-3D521227A770}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartBlendHub.WebSiteMvc", "Web\SmartBlendHub.WebSiteMvc\SmartBlendHub.WebSiteMvc.csproj", "{AC9D7728-8438-4765-95A9-51E283687DA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartBlendHub.WebSiteMvc", "Web\SmartBlendHub.WebSiteMvc\SmartBlendHub.WebSiteMvc.csproj", "{AC9D7728-8438-4765-95A9-51E283687DA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{4D24E3F0-D108-426D-A4C7-140E24BE7D77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,6 +68,7 @@ Global
 		{D0C5ED9A-11D7-4A65-84C1-D765B6D5A43C} = {C3BE423F-B07C-48AA-8807-EADFA73E4025}
 		{D5213FFD-249E-4C6E-920C-3D521227A770} = {AA9A65CB-B21A-4E12-858B-A1447C1C143A}
 		{AC9D7728-8438-4765-95A9-51E283687DA6} = {AA9A65CB-B21A-4E12-858B-A1447C1C143A}
+		{4D24E3F0-D108-426D-A4C7-140E24BE7D77} = {FB4BB96E-A433-4FFF-989C-76F551C04E2F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0BC70BE8-37CD-42F1-BBB8-0558F95101FB}
