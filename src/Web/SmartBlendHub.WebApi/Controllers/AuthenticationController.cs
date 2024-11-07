@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using SmartBlendHub.Application.Common.Interfaces.Authentication;
 using SmartBlendHub.Application.Services.Authentication;
 
 namespace SmartBlendHub.WebApi.Controllers
@@ -9,14 +10,18 @@ namespace SmartBlendHub.WebApi.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationService _authenticationService;
-        public AuthenticationController(IAuthenticationService authenticationService)
+        private readonly IJwtTokenGenerator _jwtTokenGenerator;
+        public AuthenticationController(IAuthenticationService authenticationService, IJwtTokenGenerator jwtTokenGenerator)
         {
             _authenticationService = authenticationService;
+            _jwtTokenGenerator = jwtTokenGenerator;
         }
         [HttpPost("register")]
-        public IActionResult Register(string id)
+        public IActionResult Register(string firstName, string lastName)
         {
-            return new JsonResult(_authenticationService.Register("sdsd", "sdsd"));
+            Guid userId = Guid.NewGuid();
+            var token = _jwtTokenGenerator.GenerateToken(userId, firstName, lastName);
+            return new JsonResult(_authenticationService.Register("sdsd", "sdsd",token));
         }
 
         [HttpPost("login")]

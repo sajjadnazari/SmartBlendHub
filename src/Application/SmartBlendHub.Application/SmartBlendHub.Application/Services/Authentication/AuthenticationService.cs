@@ -7,9 +7,9 @@
             return new AuthenticationResult(Guid.NewGuid(), firstName, lastName, email, "token");
         }
 
-        public AuthenticationResult Register(string email, string password)
+        public AuthenticationResult Register(string email, string password,string token)
         {
-            return new AuthenticationResult(Guid.NewGuid(), "firstName", "lastName", email, "token");
+            return new AuthenticationResult(Guid.NewGuid(), "firstName", "lastName", email, token);
         }
     }
 }
