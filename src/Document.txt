@@ -1,0 +1,15 @@
+
+
+-- Commit Jwt Token 
+Add Secret key 
+For Add Secret key to specifi project enter :
+
+# dotnet user-secrets init --project .\Web\SmartBlendHub.WebApi
+.\Web\SmartBlendHub.WebApi full address of disk location 
+# dotnet user-secrets set --project .\Web\SmartBlendHub.WebApi "JwtSettings:Secret" "super-secret-key-from-user-secrets"
+Set for appsettings variable "JwtSettings:Secret"
+
+and install pacjage dependencies : 
+ # Microsoft.Extensions.Configuration 
+ # Microsoft.Extensions.Options.ConfigurationExtensions
+ =========================================================================================================================
