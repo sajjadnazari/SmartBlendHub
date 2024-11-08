@@ -17,17 +17,16 @@ namespace SmartBlendHub.WebApi.Controllers
             _jwtTokenGenerator = jwtTokenGenerator;
         }
         [HttpPost("register")]
-        public IActionResult Register(string firstName, string lastName)
+        public IActionResult Register(string firstName, string lastName, string email, string password)
         {
-            Guid userId = Guid.NewGuid();
-            var token = _jwtTokenGenerator.GenerateToken(userId, firstName, lastName);
-            return new JsonResult(_authenticationService.Register("sdsd", "sdsd",token));
+
+            return new JsonResult(_authenticationService.Register(firstName, lastName, email, password));
         }
 
         [HttpPost("login")]
-        public IActionResult Login(string id)
+        public IActionResult Login(string email, string password)
         {
-            return Ok();
+            return new JsonResult(_authenticationService.Login(email, password));
         }
 
     }

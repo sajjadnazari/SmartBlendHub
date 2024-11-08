@@ -1,11 +1,10 @@
-﻿namespace SmartBlendHub.Application.Services.Authentication
+﻿using SmartBlendHub.Domain.Entities;
+
+namespace SmartBlendHub.Application.Services.Authentication
 {
     public record AuthenticationResult
     (
-        Guid Id,
-        string FirstName,
-        string LastName,
-        string Email,
+        User User,
         string Token
     );
 }

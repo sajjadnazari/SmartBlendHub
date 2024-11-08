@@ -1,8 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SmartBlendHub.Application.Common.Interfaces.Authentication;
+using SmartBlendHub.Application.Common.Interfaces.Persistence;
 using SmartBlendHub.Application.Common.Interfaces.Services;
 using SmartBlendHub.Infrastructure.Authentication;
+using SmartBlendHub.Infrastructure.Persistence;
 using SmartBlendHub.Infrastructure.Services;
 
 namespace SmartBlendHub.Infrastructure
@@ -15,6 +17,7 @@ namespace SmartBlendHub.Infrastructure
 
             services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+            services.AddSingleton<IUserRepository, UserRepository>();
             return services;
         }
     }
